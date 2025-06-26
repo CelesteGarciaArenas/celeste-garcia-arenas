@@ -67,8 +67,8 @@ Busco integrarme a un equipo de trabajo donde pueda aplicar mis habilidades en d
 
 ## 📫 Contacto
 
-- 📧 Email: celeste@example.com *(reemplazar por tu correo real)*
-- 💼 LinkedIn: [linkedin.com/in/tuusuario](https://linkedin.com/in/tuusuario) *(reemplazar por tu perfil real)*
+- 📧 Email: celeste-garcia.a@hotmail.com)*
+- 💼 LinkedIn: [linkedin.com/in/celeste-garcía-arenas](https://linkedin.com/in/celeste-garcía-arenas)
 - 🌐 Portafolio Angular (en desarrollo): próximamente
 
 ---
