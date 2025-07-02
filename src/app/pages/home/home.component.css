@@ -1,33 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@700&display=swap');
 
-/* Contenedor principal sin animación para el fondo */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+/* Animación fade + slide desde abajo */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación zoom suave para imagen */
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Contenedor principal */
 .landing-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 4rem;
-  background: #0a192f; /* fondo azul oscuro estático */
-  color: #cbd5e1;
+  background: #0a192f; /* azul oscuro */
+  color: #cbd5e1; /* gris claro */
   min-height: 100vh;
   gap: 2rem;
   flex-wrap: wrap;
   font-family: 'Inter', sans-serif;
   scroll-behavior: smooth;
-  opacity: 1;
+  opacity: 0;
+  animation: fadeSlideUp 0.8s ease forwards;
+  animation-delay: 0s;
 }
 
-/* Animaciones solo para elementos internos */
+/* Animaciones secuenciales para el contenido izquierdo */
 .content-left > * {
   opacity: 0;
   animation: fadeSlideUp 0.8s ease forwards;
 }
 
-/* Animación secuencial */
 .content-left > .name {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display', serif; /* O cambia aquí la fuente si quieres */
   font-size: 3.5rem;
   font-weight: 700;
-  color: #64ffda; /* azul celeste vibrante */
+  color: #0a192f; /* azul celeste vibrante */
   margin-bottom: 0.5rem;
   animation-delay: 0.2s;
 }
@@ -37,11 +65,12 @@
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #64ffda;
+  color: #0a192f;
   animation-delay: 0.4s;
 }
 
 .content-left > .description {
+  text-align: justify;
   font-size: 1.125rem;
   line-height: 1.5;
   margin-bottom: 2rem;
@@ -134,29 +163,6 @@
 .social-icons a:hover {
   color: #89e6ff;
   transform: scale(1.2);
-}
-
-/* Animaciones definidas */
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 /* Responsividad */

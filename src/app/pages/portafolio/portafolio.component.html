@@ -2,15 +2,13 @@
   <h2 class="text-center mb-5 section-title">Proyectos destacados</h2>
 
   <div *ngFor="let project of projects; let i = index"
-       class="row align-items-center mb-5 project-card"
+       class="row align-items-center mb-5 flex-column flex-md-row"
        [ngClass]="{
-         'flex-row-reverse': i % 2 !== 0,
-         'animate-left': i % 2 === 0,
-         'animate-right': i % 2 !== 0
+         'flex-md-row-reverse': i % 2 !== 0
        }">
-       
+
     <!-- Texto -->
-    <div class="col-md-6">
+    <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
       <h3 class="project-title">{{ project.title }}</h3>
       <p class="project-description">{{ project.description }}</p>
       <p>
@@ -24,8 +22,9 @@
     </div>
 
     <!-- Imagen -->
-    <div class="col-md-6 text-center">
-      <img [src]="project.image" class="img-fluid rounded shallow" alt="Imagen de {{ project.title }}">
+    <div class="col-12 col-md-6 text-center">
+      <img [src]="project.image" class="img-fluid rounded shadow" alt="Imagen de {{ project.title }}">
     </div>
   </div>
 </div>
+
