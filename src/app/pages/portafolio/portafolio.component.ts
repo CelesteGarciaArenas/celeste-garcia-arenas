@@ -30,11 +30,11 @@ export class PortafolioComponent implements AfterViewInit{
       demoLink: 'https://pulidodepisoshmv.com'
     },
     {
-      title: 'Centro Holístico Shomali',
-      description: 'Centro Holístico Shomali es un espacio dedicado al bienestar físico, emocional y espiritual, ofreciendo terapias alternativas como reiki, masajes, sanación energética, temazcal, entre otros. Desarrollé su sitio web con un diseño armonioso y responsivo, destacando sus servicios, filosofía y contacto directo. Actualmente, estoy iniciando un proceso de actualización completa del sitio para mejorar su funcionalidad, estética y posicionamiento en línea.',
-      image: 'assets/shomali.jpg',
+      title: 'Dr. Juan José Mendoza Ángeles',
+      description: 'Dr. Juan José Mendoza Ángeles es un Médico Cirujano con amplia experiencia en la atención integral de la salud, ofreciendo servicios médicos generales, control metabólico y manejo de enfermedades crónicas, así como procedimientos especializados como curación de heridas, suturas, colocación de yesos, electrocardiogramas y más. Desarrollé su sitio web con un diseño claro, funcional y responsivo, resaltando sus servicios, ubicación y facilidad de contacto.',
+      image: 'assets/doctor.jpg',
       technologies: ['HTML', 'CSS', 'JS','PHP'],
-      demoLink: 'https://centroholisticoshomali.mx'
+      demoLink: 'https://drjuanjosemendozaangeles.com.mx/'
     },
     {
       title: 'Dental SA',
